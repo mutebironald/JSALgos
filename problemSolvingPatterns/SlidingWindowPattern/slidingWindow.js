@@ -1,4 +1,6 @@
+//add up num(numbers) that would give you a maximum sum in the array supplied(arr)
 function maxSubarraySum(arr, num) {
+  let temp;
   if (num > arr.length) {
     return null;
   }
@@ -14,5 +16,9 @@ function maxSubarraySum(arr, num) {
       max = temp;
     }
   }
+  console.log(temp, "temp")
   return max;
 }
+
+let res = maxSubarraySum([12,23,4,1,23,1], 2)
+console.log(res)

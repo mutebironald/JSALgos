@@ -15,4 +15,5 @@ function capitalizeWords(arr) {
 }
 
 let words = ['i', 'am', 'learning', 'recursion'];
-capitalizeWords(words); // ['I', 'AM', 'LEARNING', 'RECURSION']
+let result = capitalizeWords(words); // ['I', 'AM', 'LEARNING', 'RECURSION']
+console.log(result)

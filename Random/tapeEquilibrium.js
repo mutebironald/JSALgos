@@ -17,4 +17,5 @@ function tapeEquilibrium(array) {
   return maximumDistance;
 }
 
-tapeEquilibrium([12, 3, 1, 5]);
+let result = tapeEquilibrium([12, 3, 1, 5]);
+console.log(result)

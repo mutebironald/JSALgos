@@ -3,13 +3,12 @@
 function nestedEvenSum(obj, sum = 0) {
   // add whatever parameters you deem necessary - good luck!
   for (let key in obj) {
-    if (typeof obj[key] === "object") {
+    if (typeof obj[key] === "object" &&!Array.isArray(obj[key])) {
       sum += nestedEvenSum(obj[key]);
     } else if (typeof obj[key] === "number" && obj[key] % 2 === 0) {
       sum += obj[key];
     }
   }
-  console.log(sum, "++++")
   return sum;
 }
 
@@ -33,5 +32,6 @@ var obj2 = {
   e: { e: { e: 2 }, ee: "car" }
 };
 
-nestedEvenSum(obj1); // 6
-nestedEvenSum(obj2); // 10s
+let result = nestedEvenSum(obj1); // 6
+let res = nestedEvenSum(obj2); // 10s
+console.log(res, result)

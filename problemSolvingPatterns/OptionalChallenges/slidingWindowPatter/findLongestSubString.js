@@ -1,5 +1,5 @@
 /**
- * Write a function that accepts a string and returns he length of
+ * Write a function that accepts a string and returns the length of
  * the longest substring with all distinct characters.
  */
 function findLongestSubstring(str) {
@@ -19,3 +19,6 @@ function findLongestSubstring(str) {
     }
     return longest;
   }
+
+var long = findLongestSubstring("mutebironinho")
+console.log(long)

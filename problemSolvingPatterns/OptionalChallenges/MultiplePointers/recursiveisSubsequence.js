@@ -21,4 +21,5 @@ function isSubsequence(str1, str2) {
   return isSubsequence(str1, str2.slice(1));
 }
 
-isSubsequence("Hello", "Hello World");
+let res = isSubsequence("Hello", "Hello World");
+console.log("su", res)

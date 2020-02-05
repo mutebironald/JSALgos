@@ -16,3 +16,6 @@ function fib(n){
     }
     return fib(n-1) + fib(n - 2)
   }
+
+  let result = fib(6)
+  console.log(result)

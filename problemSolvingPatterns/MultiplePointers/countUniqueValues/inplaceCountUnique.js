@@ -12,4 +12,5 @@ function countUniqueValues(arr){
 }
 
 
-countUniqueValues([1,1,2,2,2,3,4,4])
+let res = countUniqueValues([1,1,2,2,2,3,4,4])
+console.log(res)

@@ -66,7 +66,7 @@ class SinglyLinkedList {
       this.head = null;
       this.tail = null;
     }
-    return cuurent;
+    return current;
   }
 
   shift() {

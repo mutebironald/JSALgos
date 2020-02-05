@@ -19,4 +19,5 @@ function averagePair(arr, avg) {
   return false
 }
 
-averagePair([1,3,3,5,6,7,10,12,19], 8);
+let res = averagePair([1,3,3,5,6,7,10,12,19], 8);
+console.log(res)

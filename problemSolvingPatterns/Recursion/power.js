@@ -9,3 +9,6 @@ function power(base, exp){
     return base * power(base, exp - 1);
     
 }
+
+let res = power(2, 2)
+console.log(res)

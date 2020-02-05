@@ -1,6 +1,7 @@
 //a linked list implementation
 //note in an array we can use the push and pop or the unshift and shift methods to implement a stack.
 
+//LIFO
 
 //here we are adding and removing from the beginning of the list(shift and unshift) though we are referring to it as push and pop.
 class Node {
@@ -27,12 +28,12 @@ class Stack {
      * Set the next property on the node to be the previously created variable
      * increment the size of the stack by 1.
      */
-    var newNode = Node(val);
+    var newNode = new Node(val);
     if (!this.first) {
       this.first = newNode;
       this.last = newNode;
     } else {
-      var temp = this.last;
+      var temp = this.first;
       this.first = newNode;
       this.first.next = temp;
     }
@@ -52,6 +53,7 @@ class Stack {
     if (!this.first) return null;
     var temp = this.first;
     if (this.first === this.last) {
+      this.first = null;
       this.last = null;
     }
     this.first = this.first.next;
@@ -59,3 +61,8 @@ class Stack {
     return temp.val;
   }
 }
+
+let g = new Stack();
+g.push(3);
+g.push(4);
+console.log(g);

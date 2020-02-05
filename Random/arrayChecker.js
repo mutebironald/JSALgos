@@ -9,4 +9,5 @@ var arrayChecker = function(arr1, arr2){
 
 let array1 = ['car',  'bus'];
 let array2 = ['car', 5, 'bus']
-arrayChecker(array1, array2)
+let result = arrayChecker(array1, array2)
+console.log(result)

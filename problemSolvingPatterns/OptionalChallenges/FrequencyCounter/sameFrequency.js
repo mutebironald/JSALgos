@@ -28,4 +28,5 @@ function sameFrequency(num1, num2) {
   return true;
 }
 
-sameFrequency(34, 14);
+let val = sameFrequency(34, 14);
+console.log(val)

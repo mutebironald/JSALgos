@@ -22,3 +22,6 @@ function hash(key, arrayLen) {
 //strategies for handling collisions
 // *separate chaining ( store things together)
 //* linear probing( look forward ahead for the next empty slot)
+
+let res = hash("oinh", 4)
+console.log(res)

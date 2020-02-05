@@ -166,7 +166,7 @@ class DoublyLInkedList {
      * increment the length
      * return true
      */
-    if (this.index < 0 || index >= this.length) {
+    if (index < 0 || index >= this.length) {
       return false;
     }
     if (index === 0) {
